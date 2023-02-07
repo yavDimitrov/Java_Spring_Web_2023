@@ -10,4 +10,9 @@ public class BeanConfiguration {
     public Animal dog() {
         return new Dog();
     }
+
+    @Bean
+    public Animal cat() {
+         return new Cat();
+    }
 }
