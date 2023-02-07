@@ -10,7 +10,7 @@ public class HomeService {
     private final Animal animal;
 
     @Autowired
-    public HomeService(@Qualifier ("dog") Animal animal) {
+    public HomeService(Animal animal) {
         this.animal = animal;
         this.animal.makeSound();
     }
