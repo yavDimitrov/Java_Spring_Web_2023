@@ -12,10 +12,6 @@ public class SpringBootIntroTestApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootIntroTestApplication.class, args);
 
-        @Bean
-        public Animal getDog(){
-            return new Dog();
-        }
 
     }
 
