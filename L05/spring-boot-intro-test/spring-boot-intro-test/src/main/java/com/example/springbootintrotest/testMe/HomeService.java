@@ -8,10 +8,13 @@ import org.springframework.stereotype.Service;
 public class HomeService {
 
     private final Animal dog;
+    private final Animal cat;
 
     @Autowired
-    public HomeService(Animal dog) {
+    public HomeService(Animal dog, Animal cat) {
         this.dog = dog;
         this.dog.makeSound();
+        this.cat = cat;
+        this.cat.makeSound();
     }
 }
