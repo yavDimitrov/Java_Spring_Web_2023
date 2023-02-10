@@ -7,11 +7,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class HomeService {
 
-    private final Animal animal;
+    private final Animal dog;
 
     @Autowired
-    public HomeService(Animal animal) {
-        this.animal = animal;
-        this.animal.makeSound();
+    public HomeService(Animal dog) {
+        this.dog = dog;
+        this.dog.makeSound();
     }
 }
