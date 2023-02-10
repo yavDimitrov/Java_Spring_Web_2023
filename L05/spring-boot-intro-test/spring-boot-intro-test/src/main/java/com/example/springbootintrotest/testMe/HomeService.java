@@ -12,6 +12,7 @@ public class HomeService {
 
     @Autowired
     public HomeService(Animal dog, Animal cat) {
+        System.out.println("I'm in home!");
         this.dog = dog;
         this.dog.makeSound();
         this.cat = cat;
