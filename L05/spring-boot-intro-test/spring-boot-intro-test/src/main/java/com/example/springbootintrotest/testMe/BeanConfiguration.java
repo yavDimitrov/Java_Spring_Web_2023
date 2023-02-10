@@ -10,7 +10,7 @@ public class BeanConfiguration {
 
     //@Primary
     @Bean(value = "dog")
-    @Scope("prototype")
+    // @Scope("prototype")
     public Animal CreateDog() {
         return new Dog();
     }
