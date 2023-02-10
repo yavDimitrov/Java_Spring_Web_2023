@@ -11,7 +11,7 @@ public class HomeService {
     private final Animal cat;
 
     @Autowired
-    public HomeService(Animal dog, Animal cat) {
+    public HomeService(Animal dog, @Qualifier ("CreateCat") Animal cat) {
         System.out.println("I'm in home!");
         this.dog = dog;
         this.dog.makeSound();

@@ -7,12 +7,13 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class BeanConfiguration {
 
+    //@Primary
     @Bean(value = "dog")
     public Animal CreateDog() {
         return new Dog();
     }
 
-    @Bean(value = "cat")
+    @Bean
     public Animal CreateCat() {
          return new Cat();
     }
