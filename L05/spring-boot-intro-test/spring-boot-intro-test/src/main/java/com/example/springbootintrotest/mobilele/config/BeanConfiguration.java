@@ -1,4 +1,4 @@
-package com.example.springbootintrotest.mobilele.domain.config;
+package com.example.springbootintrotest.mobilele.config;
 
 import org.springframework.context.annotation.Configuration;
 
