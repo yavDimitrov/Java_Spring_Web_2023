@@ -9,4 +9,9 @@ public class DataBaseInitServiceImpl implements DataBaseInitService{
     public void dbInit() {
 
     }
+
+    @Override
+    public boolean isDbInit() {
+        return true;
+    }
 }

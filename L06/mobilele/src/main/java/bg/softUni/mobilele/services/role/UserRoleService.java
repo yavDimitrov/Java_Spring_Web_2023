@@ -1,5 +1,5 @@
 package bg.softUni.mobilele.services.role;
 
-public class UserRoleService {
+public interface UserRoleService {
 
 }
