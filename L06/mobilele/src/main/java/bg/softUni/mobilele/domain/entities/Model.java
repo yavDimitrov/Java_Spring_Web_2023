@@ -1,7 +1,8 @@
 package bg.softUni.mobilele.domain.entities;
 
-import com.example.springbootintrotest.mobilele.domain.enums.ModelCategory;
+
 import jakarta.persistence.*;
+import bg.softUni.mobilele.domain.enums.ModelCategory;
 
 import java.util.Date;
 

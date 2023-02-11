@@ -1,6 +1,6 @@
 package bg.softUni.mobilele.domain.entities;
 
-import com.example.springbootintrotest.mobilele.domain.enums.Role;
+import bg.softUni.mobilele.domain.enums.Role;
 import jakarta.persistence.*;
 
 @Entity

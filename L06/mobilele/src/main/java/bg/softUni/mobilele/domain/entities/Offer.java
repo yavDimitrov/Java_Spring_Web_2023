@@ -1,7 +1,7 @@
 package bg.softUni.mobilele.domain.entities;
 
-import com.example.springbootintrotest.mobilele.domain.enums.Engine;
-import com.example.springbootintrotest.mobilele.domain.enums.Transmission;
+import bg.softUni.mobilele.domain.enums.Engine;
+import bg.softUni.mobilele.domain.enums.Transmission;
 import jakarta.persistence.*;
 
 import java.util.Date;
