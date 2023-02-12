@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController extends BaseController{
 
     @GetMapping
-    public ModelAndView getHome(ModelAndView modelAndView) {
-        return super.redirect();
+    public ModelAndView getHome() {
+        return super.view("index");
     }
 }
