@@ -108,8 +108,9 @@
         <div class="form-group">
             <label class="text-center text-white font-weight-bold" for="roles">Roles</label>
             <select  id="roles" class="form-control" multiple>
-                <option>USER</option>
-                <option>ADMIN</option>
+                <tr th:each="role: ${role}">
+                    <option th:text="${role}"></option>
+                </tr>
             </select>
             <p class="errors alert alert-danger">
                 Selecting a role is required.
