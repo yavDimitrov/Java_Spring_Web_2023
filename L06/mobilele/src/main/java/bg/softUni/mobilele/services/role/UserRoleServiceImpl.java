@@ -33,6 +33,7 @@ public class UserRoleServiceImpl implements UserRoleService{
 
         if(!isDbInit()){
             List<UserRole> roles = new ArrayList<>();
+
             roles.add(new UserRole().setRole(Role.USER));
             roles.add(new UserRole().setRole(Role.ADMIN));
 
@@ -49,7 +50,8 @@ public class UserRoleServiceImpl implements UserRoleService{
     public List<UserRoleViewDto> getAll(){
         return this.userRoleRepository.findAll()
                 .stream()
-                .map(r ->this.moddelMapper.map(r, UserRoleViewDto.class)).collect(Collectors.toList());
+                .map(r ->this.moddelMapper.map(r, UserRoleViewDto.class))
+                .collect(Collectors.toList());
 
     }
 }
