@@ -1,0 +1,28 @@
+package com.softuni.pathfinder.domain.entities;
+
+import com.softuni.pathfinder.domain.enums.RoleNames;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.Table;
+
+@Entity
+@Table (name = "roles")
+public class Role extends BaseEnity{
+
+    @Enumerated(EnumType.STRING)
+    private RoleNames name;
+
+    public Role() {
+
+    }
+
+    public RoleNames getName() {
+        return name;
+    }
+
+    public Role setName(RoleNames name) {
+        this.name = name;
+        return this;
+    }
+}
