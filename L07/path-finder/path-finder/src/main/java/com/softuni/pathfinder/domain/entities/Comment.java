@@ -34,4 +34,49 @@ public class Comment extends BaseEnity{
 
     public Comment() {
     }
+
+    public Boolean getApproved() {
+        return approved;
+    }
+
+    public Comment setApproved(Boolean approved) {
+        this.approved = approved;
+        return this;
+    }
+
+    public LocalDateTime getCreated() {
+        return created;
+    }
+
+    public Comment setCreated(LocalDateTime created) {
+        this.created = created;
+        return this;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public Comment setText(String text) {
+        this.text = text;
+        return this;
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public Comment setAuthor(User author) {
+        this.author = author;
+        return this;
+    }
+
+    public Route getRoute() {
+        return route;
+    }
+
+    public Comment setRoute(Route route) {
+        this.route = route;
+        return this;
+    }
 }

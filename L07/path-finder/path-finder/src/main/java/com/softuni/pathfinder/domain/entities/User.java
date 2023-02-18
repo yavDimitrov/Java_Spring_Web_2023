@@ -33,6 +33,12 @@ public class User extends BaseEnity{
     private Level level;
         //- Accepts a level of the user (BEGINNER, INTERMEDIATE, ADVANCED)
 
+    @Column
+    private String fullName;
+
+    @Column
+    private Integer age;
+
 
     public User() {
     }

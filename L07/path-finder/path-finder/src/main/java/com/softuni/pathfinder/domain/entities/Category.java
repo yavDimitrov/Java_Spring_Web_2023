@@ -1,9 +1,15 @@
 package com.softuni.pathfinder.domain.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import com.softuni.pathfinder.domain.enums.CategoryName;
+import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name = "categories")
 public class Category extends BaseEnity {
+
+        @Enumerated(EnumType.STRING)
+        private CategoryName name; // - Accepts String values (PEDESTRIAN, BICYCLE, MOTORCYCLE, CAR)
+
+        @Column(columnDefinition = "TEXT")
+        private String description; // - Accepts very long String values
 }
