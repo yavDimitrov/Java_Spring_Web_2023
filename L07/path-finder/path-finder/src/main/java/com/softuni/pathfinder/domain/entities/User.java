@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 
 import java.util.Set;
 
+@Entity
+@Table(name = "users")
 public class User extends BaseEnity{
 
     @Column(nullable = false)
