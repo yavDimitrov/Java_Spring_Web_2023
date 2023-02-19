@@ -3,6 +3,8 @@ package com.softuni.pathfinder.domain.entities;
 import com.softuni.pathfinder.domain.enums.Level;
 import jakarta.persistence.*;
 
+import java.util.Set;
+
 @Entity
 @Table(name="routes")
 public class Route extends BaseEnity {
@@ -21,6 +23,12 @@ public class Route extends BaseEnity {
 
     @Column
     private String video;//  url – Accepts the ids of youtube videos as valuprivate String
+
+    @Column
+    private String description;
+
+    @OneToMany
+    private Set<Comment> comments;
 
 
     public Route() {

@@ -12,4 +12,25 @@ public class Category extends BaseEnity {
 
         @Column(columnDefinition = "TEXT")
         private String description; // - Accepts very long String values
+
+        public Category() {
+        }
+
+        public CategoryName getName() {
+                return name;
+        }
+
+        public Category setName(CategoryName name) {
+                this.name = name;
+                return this;
+        }
+
+        public String getDescription() {
+                return description;
+        }
+
+        public Category setDescription(String description) {
+                this.description = description;
+                return this;
+        }
 }
