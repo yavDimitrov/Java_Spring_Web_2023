@@ -27,8 +27,16 @@ public class Route extends BaseEnity {
     @Column
     private String description;
 
-    @OneToMany
+    @OneToMany(targetEntity = Comment.class,
+            mappedBy = "route",
+           cascade = { CascadeType.MERGE, CascadeType.DETACH})
     private Set<Comment> comments;
+
+
+    @OneToMany(targetEntity = Picture.class, mappedBy = "route",
+             cascade = {CascadeType.MERGE, CascadeType.DETACH} )
+    private Set<Picture> pictures;
+
 
 
     public Route() {
