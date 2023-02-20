@@ -6,7 +6,7 @@ import jakarta.persistence.MappedSuperclass;
 import org.hibernate.annotations.GenericGenerator;
 
 @MappedSuperclass
-public abstract class BaseEnity {
+public abstract class BaseEntity {
 
     @Id
     @GeneratedValue(generator = "uuid-string")
@@ -14,14 +14,14 @@ public abstract class BaseEnity {
     strategy = "org.hibernate.id.UUIDGenerator")
     private String id;
 
-    public BaseEnity() {
+    public BaseEntity() {
     }
 
     public String getId() {
         return this.id;
     }
 
-    public BaseEnity setId(String id) {
+    public BaseEntity setId(String id) {
         this.id = id;
         return this;
     }

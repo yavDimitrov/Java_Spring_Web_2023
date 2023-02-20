@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Entity
 @Table(name="routes")
-public class Route extends BaseEnity {
+public class Route extends BaseEntity {
 
     @Column(columnDefinition = "LONGTEXT", length = 3000)
     private String gpxCoordinates;//   - Accepts very long text values
@@ -22,7 +22,7 @@ public class Route extends BaseEnity {
     private User author;//  - Accepts User Entities as values
 
     @Column
-    private String video;//  url – Accepts the ids of youtube videos as valuprivate String
+    private String video;
 
     @Column
     private String description;
@@ -36,6 +36,10 @@ public class Route extends BaseEnity {
     @OneToMany(targetEntity = Picture.class, mappedBy = "route",
              cascade = {CascadeType.MERGE, CascadeType.DETACH} )
     private Set<Picture> pictures;
+
+
+    @ManyToMany
+    private Set<Category> categories;
 
 
 

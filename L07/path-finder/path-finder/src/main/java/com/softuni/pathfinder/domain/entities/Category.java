@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "categories")
-public class Category extends BaseEnity {
+public class Category extends BaseEntity {
 
         @Enumerated(EnumType.STRING)
         private CategoryName name; // - Accepts String values (PEDESTRIAN, BICYCLE, MOTORCYCLE, CAR)

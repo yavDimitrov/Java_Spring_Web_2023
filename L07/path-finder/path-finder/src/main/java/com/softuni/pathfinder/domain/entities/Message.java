@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name="messages")
-public class Message extends BaseEnity {
+public class Message extends BaseEntity {
 
     @Column(name="date_time")
     private LocalDateTime dateTime; // time - Accepts Date and Time values
