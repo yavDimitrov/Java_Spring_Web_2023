@@ -1,7 +1,7 @@
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: "jdbc:mysql://localhost:8001/path-finder?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC"
+    url: "jdbc:mysql://localhost:3306/path-finder?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC"
     username: root
     password: 12345
   servlet:
@@ -12,24 +12,28 @@ spring:
     hiddenmethod:
       filter:
         enabled: true
-  #sql:
-    #init:
-      #mode: always
+  sql:
+    init:
+      mode: always
+  #      should be always on first start
   jpa:
     # Choose either MySQL 8 or MySQL 5 below
     # For MySQL 8
     database-platform: org.hibernate.dialect.MySQL8Dialect
     #For MySQL 5
     #database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    #database-platform: org.hibernate.dialect. something MariaDB
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
     open-in-view: false
     properties:
       hibernate:
         format_sql: true
     defer-datasource-initialization: true
-#Cloudinary Properties
-#cloudinary:
-  #api-key: 
-  #api-secret: 
-  #cloud-name: 
+  #Cloudinary Properties cloud
+  #cloudinary:
+  #api-key:
+  #api-secret:
+  #cloud-name:
+server:
+  port: 8080

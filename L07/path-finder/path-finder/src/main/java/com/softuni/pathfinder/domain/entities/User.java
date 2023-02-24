@@ -19,13 +19,13 @@ public class User extends BaseEntity {
         //- Accepts String values
         //Accepts values, which should be at least 2 characters
 
-    @Column(nullable = false)
+    @Column
     private String email;
         //- Accepts String values
         //Accepts values, which contain the '@' symbol
 
     @ManyToMany(fetch = FetchType.EAGER)
-    private Set<Role> role;
+    private Set<Role> roles;
         //- Accepts Role Entity values
         //Each registered user should have a "User" role
 
@@ -70,12 +70,12 @@ public class User extends BaseEntity {
         return this;
     }
 
-    public Set<Role> getRole() {
-        return role;
+    public Set<Role> getRoles() {
+        return roles;
     }
 
-    public User setRole(Set<Role> role) {
-        this.role = role;
+    public User setRoles(Set<Role> roles) {
+        this.roles = roles;
         return this;
     }
 

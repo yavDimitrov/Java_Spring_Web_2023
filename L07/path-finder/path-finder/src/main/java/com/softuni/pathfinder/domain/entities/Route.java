@@ -24,7 +24,7 @@ public class Route extends BaseEntity {
     @Column
     private String video;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String description;
 
     @OneToMany(targetEntity = Comment.class,
