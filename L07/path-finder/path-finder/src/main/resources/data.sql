@@ -1,3 +1,4 @@
+USE 'path-finder';
 
 -- user roles
 INSERT INTO roles (id, role)
