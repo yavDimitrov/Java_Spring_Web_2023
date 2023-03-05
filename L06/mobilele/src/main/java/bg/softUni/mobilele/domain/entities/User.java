@@ -18,9 +18,12 @@ public class User extends BaseEntity{
     @Column
     private String password;                                    // – password of the user.
     @Column
-    private String firstName;                                   // –  first name of the user.
+    private String firstName;
+
     @Column
     private String lastName;                                    // –  last name of the user.
+    @Column
+    private String email;                                   // –  first name of the user.
     @Column
     private Boolean isActive;                                    // – true OR false.
     @OneToMany
@@ -31,7 +34,6 @@ public class User extends BaseEntity{
     private Date created;                                     // – a date and time.
     @Column
     private Date modified;                                    // – a date and time.
-
     public String getUsername() {
         return username;
     }
@@ -62,6 +64,15 @@ public class User extends BaseEntity{
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public User setEmail(String email) {
+        this.email = email;
+        return this;
     }
 
     public Boolean getActive() {
