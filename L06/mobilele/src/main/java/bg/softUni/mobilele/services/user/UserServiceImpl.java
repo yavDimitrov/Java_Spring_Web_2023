@@ -1,3 +1,4 @@
+/*
 package bg.softUni.mobilele.services.user;
 
 import bg.softUni.mobilele.repositories.UserRepository;
@@ -6,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserServiceImpl implements UserService, DataBaseInitService {
+public class UserServiceImpl implements DataBaseInitService {
 
 
     private final UserRepository userRepository;
@@ -27,3 +28,4 @@ public class UserServiceImpl implements UserService, DataBaseInitService {
     }
 }
 
+*/
