@@ -8,7 +8,7 @@ spring:
     database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       # dialect: org.hibernate.dialect.MySQL8Dialect
-      ddl-auto: create-drop
+      ddl-auto: update
 #    properties:
 #      format_sql : 'TRUE'
 #      show_sql : 'TRUE'
