@@ -10,12 +10,12 @@ spring:
       # dialect: org.hibernate.dialect.MySQL8Dialect
       ddl-auto: create-drop
     defer-datasource-initialization: true
-#    properties:
-#      format_sql : 'TRUE'
-#      show_sql : 'TRUE'
   sql:
     init:
       mode: always
+#    properties:
+#      format_sql : 'TRUE'
+#      show_sql : 'TRUE'
 
 #logging:
 #  level:
