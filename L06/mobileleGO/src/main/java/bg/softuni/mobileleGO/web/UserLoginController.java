@@ -1,4 +1,4 @@
-package bg.softuni.mobileleGO.model.web;
+package bg.softuni.mobileleGO.web;
 
 import bg.softuni.mobileleGO.model.dto.UserLoginDTO;
 import bg.softuni.mobileleGO.service.UserService;
@@ -19,6 +19,8 @@ public class UserLoginController {
     public String login( ){
         return "auth-login";
     }
+
+    
 
     @PostMapping ("/user/login")
     public String login(UserLoginDTO userLoginDTO) {
