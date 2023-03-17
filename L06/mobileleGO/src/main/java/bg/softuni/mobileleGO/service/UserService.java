@@ -12,7 +12,7 @@ import java.util.Optional;
 @Service
 public class UserService {
 
-    private Logger LOGGRE = LoggerFactory.getLogger(UserService.class);
+    private Logger LOGGER = LoggerFactory.getLogger(UserService.class);
 
     private final UserRepository userRepository;
 
@@ -21,11 +21,14 @@ public class UserService {
 
     }
 
-    public boolean login(UserLoginDTO loginDTOoginDTO) {
-        Optional <UserEntity> userOpt = userRepository.findByEmail(loginDTOoginDTO.getUsername());
+    public boolean login(UserLoginDTO loginDTO) {
+        Optional <UserEntity> userOpt = userRepository.findByEmail(loginDTO.getUsername());
 
         if(userOpt.isEmpty()){
-
+            LOGGER.info("User with name [{}] not found.", loginDTO.getUsername());
+            return false;
         }
+
+        return userOpt.get().getPassword().equals(loginDTO.getPassword());
     }
 }
