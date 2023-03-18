@@ -23,6 +23,7 @@ public class UserService {
         this.currentUser = currentUser;
     }
 
+
     public boolean login(UserLoginDTO loginDTO) {
         Optional <UserEntity> userOpt = userRepository.findByEmail(loginDTO.getUsername());
 
@@ -38,15 +39,14 @@ public class UserService {
         } else {
              logout();
         }
-
         return success;
     }
 
-    private void login(UserEntity userEntity) {
+        public void login(UserEntity userEntity) {
         currentUser.setLoggedIn(true).
                 setName(userEntity.getFirstName() + " " + userEntity.getLastName());
     }
-        private void logout(){
+        public void logout(){
             currentUser.clear();
         }
 }
