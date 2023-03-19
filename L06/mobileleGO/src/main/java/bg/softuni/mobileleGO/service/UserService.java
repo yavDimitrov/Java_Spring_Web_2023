@@ -6,6 +6,7 @@ import bg.softuni.mobileleGO.model.entity.UserEntity;
 import bg.softuni.mobileleGO.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -17,14 +18,16 @@ public class UserService {
 
     private final UserRepository userRepository;
     private CurrentUser currentUser;
+    private PasswordEncoder passwordEncoder;
 
-    public UserService(UserRepository userRepository, CurrentUser currentUser){
+    public UserService(UserRepository userRepository, CurrentUser currentUser, PasswordEncoder passwordEncoder){
         this.userRepository = userRepository;
         this.currentUser = currentUser;
+        this.passwordEncoder = passwordEncoder;
     }
 
 
-    public boolean login(UserLoginDTO loginDTO) {
+        public boolean login(UserLoginDTO loginDTO) {
         Optional <UserEntity> userOpt = userRepository.findByEmail(loginDTO.getUsername());
 
         if(userOpt.isEmpty()){
@@ -32,7 +35,10 @@ public class UserService {
             return false;
         }
 
-        boolean success = userOpt.get().getPassword().equals(loginDTO.getPassword());
+        var rawPassword = loginDTO.getPassword();
+        var encodedPassword = userOpt.get().getPassword();
+
+        boolean success = passwordEncoder.matches(rawPassword,encodedPassword);
 
         if(success) {
             login(userOpt.get());

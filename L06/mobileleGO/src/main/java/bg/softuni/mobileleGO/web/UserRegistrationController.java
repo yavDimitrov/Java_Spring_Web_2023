@@ -9,13 +9,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class UserRegistrationController {
 
     @GetMapping("/users/register")
-
-
     public String register() {
         return "auth-register";
     }
 
-  @PostMapping
+  @PostMapping("/users/register")
     public String register(UserRegisterDTO userRegisterDTO) {
         return "redirect:/";
   }
