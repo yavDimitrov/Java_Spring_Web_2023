@@ -37,7 +37,7 @@ public class UserService {
                 setPassword(passwordEncoder.encode(userRegisterDTO.getPassword()));
 
         newUser = userRepository.save(newUser);
-
+        
         login(newUser);
 
     }
@@ -47,7 +47,7 @@ public class UserService {
         Optional<UserEntity> userOpt = userRepository.findByEmail(loginDTO.getUsername());
 
         if (userOpt.isEmpty()) {
-            LOGGER.info("User with not found. User name: {} ", loginDTO.getUsername());
+            LOGGER.info("User not found. User name: {} ", loginDTO.getUsername());
             return false;
         }
 

@@ -45,7 +45,7 @@ public class UserController {
     public String register(UserRegisterDTO userRegisterDTO) {
 
         userService.registerAndLogin(userRegisterDTO);
-        
+
         return "redirect:/";
     }
 
