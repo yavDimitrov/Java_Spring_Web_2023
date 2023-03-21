@@ -1,6 +1,7 @@
 package bg.softuni.mobileleGO.web;
 
 import bg.softuni.mobileleGO.model.dto.UserLoginDTO;
+import bg.softuni.mobileleGO.model.dto.UserRegisterDTO;
 import bg.softuni.mobileleGO.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/users")
-public class UserLoginController {
+public class UserController {
 
     private UserService userService;
 
-    public UserLoginController(UserService userService) {
+    public UserController(UserService userService) {
         this.userService = userService;
     }
 
@@ -32,6 +33,16 @@ public class UserLoginController {
     public String login(UserLoginDTO userLoginDTO) {
         userService.login(userLoginDTO);
 
+        return "redirect:/";
+    }
+
+    @GetMapping("/register")
+    public String register() {
+        return "auth-register";
+    }
+
+    @PostMapping("/register")
+    public String register(UserRegisterDTO userRegisterDTO) {
         return "redirect:/";
     }
 
