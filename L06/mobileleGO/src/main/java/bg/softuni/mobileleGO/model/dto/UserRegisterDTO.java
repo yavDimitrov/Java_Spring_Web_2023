@@ -2,6 +2,8 @@ package bg.softuni.mobileleGO.model.dto;
 
 public class UserRegisterDTO {
 
+    private String email;
+
     private String firstName;
 
     private String lastName;
@@ -34,6 +36,15 @@ public class UserRegisterDTO {
 
     public UserRegisterDTO setPassword(String password) {
         this.password = password;
+        return this;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public UserRegisterDTO setEmail(String email) {
+        this.email = email;
         return this;
     }
 

@@ -35,8 +35,8 @@ public class UserService {
             return false;
         }
 
-        var rawPassword = loginDTO.getPassword();
-        var encodedPassword = userOpt.get().getPassword();
+        String rawPassword = loginDTO.getPassword();
+        String encodedPassword = userOpt.get().getPassword();
 
         boolean success = passwordEncoder.matches(rawPassword,encodedPassword);
 
