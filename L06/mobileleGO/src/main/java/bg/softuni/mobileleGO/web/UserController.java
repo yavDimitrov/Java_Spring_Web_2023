@@ -19,17 +19,17 @@ public class UserController {
     }
 
     @GetMapping("/login")
-    public String login(){
+    public String login() {
         return "auth-login";
     }
 
     @GetMapping("/logout")
-    public String logout(){
+    public String logout() {
         userService.logout();
         return "redirect:/";
     }
 
-    @PostMapping ("/login")
+    @PostMapping("/login")
     public String login(UserLoginDTO userLoginDTO) {
         userService.login(userLoginDTO);
 

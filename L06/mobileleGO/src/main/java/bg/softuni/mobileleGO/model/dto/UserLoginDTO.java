@@ -2,15 +2,21 @@ package bg.softuni.mobileleGO.model.dto;
 
 public class UserLoginDTO {
 
-    private String username;
+    private String email;
     private String password;
 
+
+    public UserLoginDTO(String username, String password) {
+        this.email = username;
+        this.password = password;
+    }
+
     public String getUsername() {
-        return username;
+        return email;
     }
 
     public UserLoginDTO setUsername(String username) {
-        this.username = username;
+        this.email = username;
         return this;
     }
 
@@ -27,7 +33,7 @@ public class UserLoginDTO {
     public String
     toString() {
         return "UserLoginDTO{" +
-                "username='" + username + '\'' +
+                "username='" + email + '\'' +
                 ", password='" + (password != null ? "[PROVIDED]" : null) + '\'' +
                 '}';
     }

@@ -37,7 +37,7 @@ public class UserService {
                 setPassword(passwordEncoder.encode(userRegisterDTO.getPassword()));
 
         newUser = userRepository.save(newUser);
-        
+
         login(newUser);
 
     }
