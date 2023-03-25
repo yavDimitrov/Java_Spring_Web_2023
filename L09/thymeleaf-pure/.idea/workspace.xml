@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c90e2dd8-81ff-442a-8840-33457648bdd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/src/main/resources/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg.softuni.thymeleaf/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thymeleaf-pure.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src/main/resources/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,17 +51,33 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="bg.softuni.thymeleaf" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="B:\Git_Hub\Java_Spring_Web_2023\L09\thymeleaf-pure\.idea\src\main" />
+      <recent name="B:\Git_Hub\Java_Spring_Web_2023\L09\thymeleaf-pure\src\main" />
+      <recent name="B:\Git_Hub\Java_Spring_Web_2023\L09\thymeleaf-pure\src" />
+      <recent name="B:\Git_Hub\Java_Spring_Web_2023\L09\thymeleaf-pure" />
+      <recent name="B:\Git_Hub\Java_Spring_Web_2023\L09\thymeleaf-pure\.idea\src\main\java\bg.softuni.thymeleaf" />
+      <recent name="B:\Git_Hub\Java_Spring_Web_2023\L09\thymeleaf-pure\.idea\src\main\java" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679766282386</updated>
-      <workItem from="1679766284263" duration="3096000" />
+      <workItem from="1679766284263" duration="6405000" />
     </task>
     <servers />
   </component>
