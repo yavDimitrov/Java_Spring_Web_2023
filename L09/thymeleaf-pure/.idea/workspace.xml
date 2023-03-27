@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c90e2dd8-81ff-442a-8840-33457648bdd0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thymeleaf-pure_01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../thymeleaf-pure_01/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thymeleaf-pure_02/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../thymeleaf-pure_02/.idea/gradle.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c90e2dd8-81ff-442a-8840-33457648bdd0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679766282386</updated>
       <workItem from="1679766284263" duration="6405000" />
-      <workItem from="1679949437745" duration="341000" />
+      <workItem from="1679949437745" duration="670000" />
     </task>
     <servers />
   </component>
